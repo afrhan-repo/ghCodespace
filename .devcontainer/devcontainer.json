@@ -3,6 +3,8 @@
         "dockerfile": "./Dockerfile",
         "context": "."
     },
+    "runArgs": ["--init", "--privileged"],
+	"mounts": ["source=dind-var-lib-docker,target=/var/lib/docker,type=volume"],
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": "true",
