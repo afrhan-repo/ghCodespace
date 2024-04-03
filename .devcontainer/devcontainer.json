@@ -18,11 +18,9 @@
             "version": "latest",
             "ppa": "false"
         },
-	 "ghcr.io/devcontainers/features/docker-in-docker:2": {
-			"version": "${templateOption:dockerVersion}",
-			"enableNonRootDocker": "${templateOption:enableNonRootDocker}",
-			"moby": "${templateOption:moby}"
-	 }   
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "version": "latest"
+        }   
     },
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
